@@ -9,6 +9,8 @@ repositories {
 
 dependencies {
     // Use JUnit test framework.
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.12.4'
     testImplementation(platform('org.junit:junit-bom:5.8.0'))
     testImplementation('org.junit.jupiter:junit-jupiter')
     testImplementation 'com.squareup.okhttp3:mockwebserver:4.9.3'

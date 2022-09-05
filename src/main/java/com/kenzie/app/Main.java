@@ -14,10 +14,12 @@ enum FruitCriteria {
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         // do not change code in main()
+
         String allFruitsDesiredUrl = FruitHttpClient.getDesiredURL(FruitCriteria.ALL);
         String lowCarbFruitsDesiredUrl = FruitHttpClient.getDesiredURL(FruitCriteria.LOW_CARB);
         String highCalorieFruitsDesiredUrl = FruitHttpClient.getDesiredURL(FruitCriteria.HIGH_CALORIE);
         FruitHttpClient fruitHttpClient = new FruitHttpClient();
+
 
         // get all fruits and print them
         String allFruitsResponseBody = fruitHttpClient.getFruits(allFruitsDesiredUrl);
